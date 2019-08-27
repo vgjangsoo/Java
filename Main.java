@@ -3,7 +3,11 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        // all caps for the constant.
-        final float PI = 3.14F;
+        double result = (double)10 / (double)3;
+        System.out.println(result);
+
+        int x = 1;
+        x++;
+        System.out.println(x);
     }
 }
