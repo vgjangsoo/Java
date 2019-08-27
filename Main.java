@@ -1,24 +1,21 @@
-import java.awt.*;
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
-        // Implicit casting
-        // byte > short > int > long > float > double
-        short x = 1;
-        int y = x + 2;
-        System.out.println(y);
+        int result = Math.round(1.1F);
+        System.out.println(result);
 
-        double a = 1.1;
-        int b = (int)a + 2;
-        System.out.println(b);
+        int result2 = (int) Math.ceil(1.1F);
+        System.out.println(result2);
 
-        String c = "1";
-        int d = Integer.parseInt(c) + 2;
-        System.out.println(d);
+        int result3 = (int) Math.floor(1.1F);
+        System.out.println(result3);
 
-        String e = "1.1";
-        double f = Double.parseDouble(e) + 2;
-        System.out.println(f);
+        int result4 = Math.max(1, 2);
+        System.out.println(result4);
+
+        double result5 = Math.random();
+        System.out.println(result5);
+
+        int result6 = (int) (Math.random() * 100);
+        System.out.println(result6);
     }
 }
