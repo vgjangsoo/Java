@@ -1,12 +1,15 @@
-import java.text.NumberFormat;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        NumberFormat currency = NumberFormat.getCurrencyInstance();
-        String result = currency.format(1234567.891);
-        System.out.println(result);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Age: ");
+        byte age = scanner.nextByte();
+        System.out.println("You are " + age);
 
-        String result2 = NumberFormat.getPercentInstance().format(0.1);
-        System.out.println(result2);
+        Scanner scanner2 = new Scanner(System.in);
+        System.out.print("Name: ");
+        String name = scanner2.nextLine().trim();
+        System.out.println("You are " + name);
     }
 }
